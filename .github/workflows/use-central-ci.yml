@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  centralized-pipeline:
+  manifest-pipeline:
     uses: staleyj15/docker-ci/.github/workflows/docker-push.yml@main
     secrets:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
